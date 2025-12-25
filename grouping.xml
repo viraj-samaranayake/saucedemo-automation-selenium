@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Grouping Test Suite">
+
+    <groups>
+        <run>
+<!--            <include name="Master"/>-->
+            <include name="DataDriven"/>
+        </run>
+    </groups>
+
+    <test verbose="2" preserve-order="true" name="Login Automation">
+        <classes>
+<!--            <class name="testCases.LoginTest"/>-->
+<!--            <class name="testCases.LoginTestInValid"/>-->
+            <class name="testCases.LoginTestDDT"/>
+        </classes>
+    </test>
+
+</suite>
